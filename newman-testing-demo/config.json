@@ -1,0 +1,14 @@
+{
+    "collections": {
+      "Sample" : "collections/Sample/API COE Testing.postman_collection.json",
+      "FlashRegression":"collections/FlashRegression/FLASH Regression mini.postman_collection.json",
+      "FlashRegression2":"collections/FlashRegression/FLASH Regression.postman_collection.json"
+       
+    },
+    "env_mapping": {
+      "SIT": "environments/sit_env.json",
+      "UAT": "environments/uat_env.json",
+      "PROD": "environments/prod_env.json"
+    }
+  }
+  

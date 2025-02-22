@@ -1,0 +1,12 @@
+{
+    "id": "prod-env",
+    "name": "PROD",
+    "values": [
+      {
+        "key": "base_url",
+        "value": "https://gateway.api.rhbgroup.com",
+        "enabled": true
+      }
+    ]
+  }
+  

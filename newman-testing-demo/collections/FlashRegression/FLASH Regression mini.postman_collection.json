@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "929e4132-2a3a-4a27-a0cc-35efdb6f2162",
+		"name": "FLASH Regression mini",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28321491"
+	},
+	"item": [
+		{
+			"name": "Auto Finance UAT",
+			"item": [
+				{
+					"name": "AFPrescreen eInvoice R25_MVP 7.2",
+					"item": [
+						{
+							"name": "AFPsc_EInvoiceFlag-N",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AA1A1738925613476104</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20250207</TrxnDate>\r\n                <TrxnTime>185333</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>top@finhero.asia</PartnerEmail>\r\n                <ProcessID>AA1A1738925613476104</ProcessID>\r\n                <ProcessDate>20250207185333</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>131</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>870901055288</IdNo>\r\n                <CustomerName>Ross Geller</CustomerName>\r\n                <DateOfBirth>01/09/1987</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>03</Race>\r\n                <MobilePhoneNoAreaCode>012</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>5737557</MobilePhoneNo>\r\n                <Email>jobe@finhero.asia</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>9000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>AVUN</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>123456.78</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.95</ProfitRate>\r\n                <Ney>5.95</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0033</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n                <EInvoiceFlag>N</EInvoiceFlag>\r\n                <TinNo/>\r\n                <SstNo/>\r\n                <TourismTaxNo/>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://172.30.94.15:8084/APIFlash",
+									"protocol": "https",
+									"host": [
+										"172",
+										"30",
+										"94",
+										"15"
+									],
+									"port": "8084",
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AFPsc_W/o EInvoiceFlag",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AA1A1738925613476103</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20250207</TrxnDate>\r\n                <TrxnTime>185333</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>top@finhero.asia</PartnerEmail>\r\n                <ProcessID>AA1A1738925613476103</ProcessID>\r\n                <ProcessDate>20250207185333</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>131</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>870901055287</IdNo>\r\n                <CustomerName>NAMASTAY</CustomerName>\r\n                <DateOfBirth>01/09/1987</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>03</Race>\r\n                <MobilePhoneNoAreaCode>012</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>5737557</MobilePhoneNo>\r\n                <Email>jobe@finhero.asia</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>9000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>AVUN</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>123456.78</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.95</ProfitRate>\r\n                <Ney>5.95</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0033</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://172.30.94.15:8084/APIFlash",
+									"protocol": "https",
+									"host": [
+										"172",
+										"30",
+										"94",
+										"15"
+									],
+									"port": "8084",
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AFPsc_EInvoiceFlag-Y",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"content-type": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "{{Content-Type}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AA1A1738925613476105</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20250207</TrxnDate>\r\n                <TrxnTime>185333</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>top@finhero.asia</PartnerEmail>\r\n                <ProcessID>AA1A1738925613476105</ProcessID>\r\n                <ProcessDate>20250207185333</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>131</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>870901055289</IdNo>\r\n                <CustomerName>Monica Geller</CustomerName>\r\n                <DateOfBirth>01/09/1987</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>03</Race>\r\n                <MobilePhoneNoAreaCode>012</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>5737557</MobilePhoneNo>\r\n                <Email>jobe@finhero.asia</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>9000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>AVUN</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>123456.78</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.95</ProfitRate>\r\n                <Ney>5.95</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0033</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n                <EInvoiceFlag>Y</EInvoiceFlag>\r\n                <TinNo>A2345678901234652</TinNo>\r\n                <SstNo>B-345678901234567</SstNo>\r\n                <TourismTaxNo>C-345678901234567</TourismTaxNo>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{flashURL}}/APIFlash",
+									"host": [
+										"{{flashURL}}"
+									],
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AFPsc_validate-TINNo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AA1A1738925613476118</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20250207</TrxnDate>\r\n                <TrxnTime>185333</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>top@finhero.asia</PartnerEmail>\r\n                <ProcessID>AA1A1738925613476118</ProcessID>\r\n                <ProcessDate>20250207185333</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>131</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>870901055289</IdNo>\r\n                <CustomerName>Rachel Geller</CustomerName>\r\n                <DateOfBirth>01/09/1987</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>03</Race>\r\n                <MobilePhoneNoAreaCode>012</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>5737557</MobilePhoneNo>\r\n                <Email>jobe@finhero.asia</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>9000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>AVUN</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>123456.78</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.95</ProfitRate>\r\n                <Ney>5.95</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0033</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n                <EInvoiceFlag>Y</EInvoiceFlag>\r\n                <TinNo>A2345678901234652</TinNo>\r\n                <SstNo>B-3456789012345678</SstNo>\r\n                <TourismTaxNo>C-3456789012345678</TourismTaxNo>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{flashURL}}/APIFlash",
+									"host": [
+										"{{flashURL}}"
+									],
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AFPsc_validate SSTRegNo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AA1A1738925613476107</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20250207</TrxnDate>\r\n                <TrxnTime>185333</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>top@finhero.asia</PartnerEmail>\r\n                <ProcessID>AA1A1738925613476107</ProcessID>\r\n                <ProcessDate>20250207185333</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>131</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>870901055289</IdNo>\r\n                <CustomerName>Monica Geller</CustomerName>\r\n                <DateOfBirth>01/09/1987</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>03</Race>\r\n                <MobilePhoneNoAreaCode>012</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>5737557</MobilePhoneNo>\r\n                <Email>jobe@finhero.asia</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>9000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>AVUN</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>123456.78</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.95</ProfitRate>\r\n                <Ney>5.95</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0033</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n                <EInvoiceFlag>Y</EInvoiceFlag>\r\n                <TinNo>A2345678901234652</TinNo>\r\n                <SstNo>B-3456789012345678</SstNo>\r\n                <TourismTaxNo>C-345678901234567</TourismTaxNo>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{flashURL}}/APIFlash",
+									"host": [
+										"{{flashURL}}"
+									],
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AFPsc_validate TourismTaxNo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AA1A1738925613476105</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20250207</TrxnDate>\r\n                <TrxnTime>185333</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>top@finhero.asia</PartnerEmail>\r\n                <ProcessID>AA1A1738925613476105</ProcessID>\r\n                <ProcessDate>20250207185333</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>131</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>870901055289</IdNo>\r\n                <CustomerName>Monica Geller</CustomerName>\r\n                <DateOfBirth>01/09/1987</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>03</Race>\r\n                <MobilePhoneNoAreaCode>012</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>5737557</MobilePhoneNo>\r\n                <Email>jobe@finhero.asia</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>9000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>AVUN</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>123456.78</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.95</ProfitRate>\r\n                <Ney>5.95</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0033</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n                <EInvoiceFlag>Y</EInvoiceFlag>\r\n                <TinNo>A2345678901234652</TinNo>\r\n                <SstNo>B-3456789012345678</SstNo>\r\n                <TourismTaxNo>C-3456789012345678</TourismTaxNo>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{flashURL}}/APIFlash",
+									"host": [
+										"{{flashURL}}"
+									],
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.collectionVariables.set(\"statusCodeTest\", `",
+					"    pm.test(\"Status code is 200\", function () {",
+					"        pm.response.to.have.status(200);",
+					"    });",
+					"`);",
+					"",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"// Log the response body to the console",
+					"console.log(\"Response Body:\", pm.response.text());",
+					"",
+					"eval(pm.collectionVariables.get(\"statusCodeTest\"));"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "statusCodeTest",
+			"value": ""
+		}
+	]
+}

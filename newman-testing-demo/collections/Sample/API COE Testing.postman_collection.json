@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "07f71f9f-2c5f-4838-9894-72eae802dcf6",
+		"name": "API COE Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1799757",
+		"_collection_link": "https://winter-station-4559.postman.co/workspace/latest-API-COE~79c9a9c1-81dd-4344-98ef-fa714a2a66ec/collection/1799757-07f71f9f-2c5f-4838-9894-72eae802dcf6?action=share&source=collection_link&creator=1799757"
+	},
+	"item": [
+		{
+			"name": "Auto Finance UAT",
+			"item": [
+				{
+					"name": "APIM API",
+					"item": []
+				},
+				{
+					"name": "FLASH API",
+					"item": [
+						{
+							"name": "REAIDC10-AFPreScreenSubmission demo",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"// Convert XML response to JSON",
+											"var responseJson = xml2Json(pm.response.text());",
+											"",
+											"// Validate Status Code",
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"// Validate MsgRefNo is Present",
+											"pm.test(\"MsgRefNo exists\", function () {",
+											"    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.MsgRefNo).to.exist;",
+											"});",
+											"",
+											"// Validate MsgRefNo Starts with 'AP'",
+											"pm.test(\"MsgRefNo starts with 'AP'\", function () {",
+											"    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.MsgRefNo).to.include(\"AP\");",
+											"});",
+											"",
+											"// Validate ExtTrxnCd is REAIDC10",
+											"pm.test(\"ExtTrxnCd is REAIDC10\", function () {",
+											"    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.ExtTrxnCd).to.eql(\"REAIDC10\");",
+											"});",
+											"",
+											"// Validate Error Code is 01",
+											"pm.test(\"Error Code is 01\", function () {",
+											"    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.ErrCode).to.eql(\"01\");",
+											"});",
+											"",
+											"// Validate DestQueueMgr is UMYQMB02",
+											"pm.test(\"DestQueueMgr is UMYQMB02\", function () {",
+											"    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.DestQueueMgr).to.eql(\"UMYQMB02\");",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AP20241024120516999991</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20241024</TrxnDate>\r\n                <TrxnTime>120516</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>wasiim@imoney.my</PartnerEmail>\r\n                <ProcessID>RH1A1729742716077101</ProcessID>\r\n                <ProcessDate>20241024120516</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>457</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>990101211111</IdNo>\r\n                <CustomerName>Mansor Bin Masdor</CustomerName>\r\n                <DateOfBirth>01/01/1999</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>01</Race>\r\n                <MobilePhoneNoAreaCode>60</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>123456789</MobilePhoneNo>\r\n                <Email>mm@yopmail.com</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>-10000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>FRUVNN9I</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>-120000.0</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.75</ProfitRate>\r\n                <Ney>5.75</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0035</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://172.30.94.15:8084/APIFlash",
+									"protocol": "https",
+									"host": [
+										"172",
+										"30",
+										"94",
+										"15"
+									],
+									"port": "8084",
+									"path": [
+										"APIFlash"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Credit Card UAT",
+			"item": [
+				{
+					"name": "APIM API",
+					"item": [
+						{
+							"name": "CC submission",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dccffd452e9a4e8aa78bceac1c09d1e8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"campaign\": \"AA111\",\n    \"preferredBranch\": \"061\",\n    \"customer\": {\n        \"customerName\": \"Nurul\",\n        \"idType\": \"MK\",\n        \"idNo\": \"980910113886\",\n        \"nationality\": \"MY\",\n        \"race\": \"04\",\n        \"gender\": \"F\",\n        \"educationLevel\": \"04\",\n        \"maritalStatus\": \"S\",\n        \"noOfDependents\": \"00\",\n        \"employerName\": \"\",\n        \"occupation\": \"050\",\n        \"employmentType\": \"03\",\n        \"employmentSector\": \"\",\n        \"subEmploymentSector\": \"\",\n        \"dateJoined\": \"2021-12-26\",\n        \"monthlyGrossIncome\": \"15000.00\",\n        \"monthlyNetIncome\": \"100000.00\",\n        \"mobilePhoneNoAreaCode\": \"015\",\n        \"mobilePhoneNo\": \"9876543\",\n        \"email\": \"sandfdfo.erw1112@gmail.com\",\n        \"residenceType\": \"CC0004\",\n        \"employmentStatus\": \"CON\",\n        \"preferredLanguage\": \"02\",\n        \"mailingBillingAddressInd\": \"R\",\n        \"emergencyContactName\": \"Alex\",\n        \"relationshipToContactName\": \"08\",\n        \"relationshipToStaff\": \"42\",\n        \"emerContactTelNo1AreaCode\": \"015\",\n        \"emerContactTelNo1\": \"9123459\",\n        \"consentCrossSelling\": \"Y\",\n        \"consentObtainInfoFromCtos\": \"N\",\n        \"excessLimitConsent\": \"Y\",\n        \"feePayable/Waiver and Product Benefits\": \"Y\",\n        \"disclosureOfInformation\": \"Y\",\n        \"consentForOverseas&CardNotPresentTransaction\": \"N\",\n        \"sourceOfWealth\": \"09\",\n        \"relatedToStaff\": \"N\",\n        \"addressList\": [\n            {\n                \"addressType\": \"P\",\n                \"addressLine1\": \"No24, 2nd Street\",\n                \"addressLine2\": \"1\",\n                \"addressLine3\": \"1\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"01\"\n            },\n            {\n                \"addressType\": \"O\",\n                \"addressLine1\": \"110, New Colony Street\",\n                \"addressLine2\": \"hdf\",\n                \"addressLine3\": \"KL\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"officePhoneNoAreaCode\": \"607\",\n                \"officePhoneNo\": \"9876507\",\n                \"officeExtensionPhoneNo\": \"\",\n                \"durationInCurrentResidenceYr\": \"\",\n                \"durationInCurrentResidenceMth\": \"\"\n            },\n            {\n                \"addressType\": \"R\",\n                \"addressLine1\": \"3/339, HB\",\n                \"addressLine2\": \"Old Street\",\n                \"addressLine3\": \"Near Bus Stop\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"02\"\n            }\n        ],\n        \"salutation\": \"002\",\n        \"cardCollectionBranch\": \"046\",\n        \"statementType\": \"R\",\n        \"nameOnCard\": \"Nurulnabilah\",\n        \"mothersMaidenName\": \"Ahmad Shukri\",\n        \"companyType\": \"003\",\n        \"previousEmployerName\": \"\",\n        \"directorship\": \"N\",\n        \"businessRegistrationNo\": \"20000301ABC\",\n        \"paidUpCapital\": \"100000\",\n        \"shareholdingAmount\": \"\",\n        \"%OfShareholding\": \"80\",\n        \"multinationalCompany\": \"\",\n        \"businessEstDate\": \"2000-03-01\",\n        \"previousOccupation\": \"\",\n        \"previousLengthOfService(Year)\": \"\",\n        \"previousLengthOfService(Month)\": \"11\",\n        \"homePhoneNoAreaCode\": \"\",\n        \"homePhoneNo\": \"\",\n        \"homeExtPhoneNo\": \"\",\n        \"emerContactTelNo1Ext\": \"1234\",\n        \"emerContactTelNo2AreaCode\": \"\",\n        \"emerContactTelNo2\": \"\",\n        \"emerContactTelNo2Ext\": \"1987\",\n        \"shortName\": \"\"\n    },\n    \"cardFacilityList\": [\n        {\n            \"sourceOfFund\": \"01\",\n            \"purposeOfAccountOpening\": \"01\",\n            \"creditShield\": \"Y\",\n            \"memoLine1\": \"\",\n            \"pin\": \"Y\",\n            \"cardProduct\": [\n                {\n                    \"cardType\": \"590\"\n                }\n            ]\n        }\n    ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ccsubmit/ccSubmission/aip/v1/CCApplication/submission",
+									"protocol": "https",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ccsubmit",
+										"ccSubmission",
+										"aip",
+										"v1",
+										"CCApplication",
+										"submission"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CC status tracker",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Ocp-Apim-Subscription-Key",
+										"value": "dccffd452e9a4e8aa78bceac1c09d1e8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"primaryID\": \"980910113886\",\n    \"fromDate\": \"2023-10-27\",\n    \"toDate\": \"2023-10-27\",\n    \"externalRefID\": \"CC20231027073558100002\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ccstatus/ccStatus/aip/v1/CCApplication/status",
+									"protocol": "https",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ccstatus",
+										"ccStatus",
+										"aip",
+										"v1",
+										"CCApplication",
+										"status"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "FLASH API",
+					"item": []
+				}
+			]
+		}
+	]
+}

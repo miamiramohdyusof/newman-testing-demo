@@ -1,0 +1,2297 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "07f71f9f-2c5f-4838-9894-72eae802dcf6",
+      "exporter_id": "1799757",
+      "collection_link": "https://winter-station-4559.postman.co/workspace/latest-API-COE~79c9a9c1-81dd-4344-98ef-fa714a2a66ec/collection/1799757-07f71f9f-2c5f-4838-9894-72eae802dcf6?action=share&source=collection_link&creator=1799757"
+    },
+    "item": [
+      {
+        "id": "932162ac-06a2-42dd-b712-a3132588b342",
+        "name": "Auto Finance UAT",
+        "item": [
+          {
+            "id": "e0b45c21-4cd7-45e5-94ba-10c8b39abc1c",
+            "name": "APIM API",
+            "item": [],
+            "event": []
+          },
+          {
+            "id": "0bebf8d8-e157-482e-a2c2-d698c9935f7f",
+            "name": "FLASH API",
+            "item": [
+              {
+                "id": "5c375496-024c-4187-9afd-8a8f81dbf5bd",
+                "name": "REAIDC10-AFPreScreenSubmission demo",
+                "request": {
+                  "url": {
+                    "protocol": "https",
+                    "port": "8084",
+                    "path": [
+                      "APIFlash"
+                    ],
+                    "host": [
+                      "172",
+                      "30",
+                      "94",
+                      "15"
+                    ],
+                    "query": [],
+                    "variable": []
+                  },
+                  "method": "POST",
+                  "body": {
+                    "mode": "raw",
+                    "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AP20241024120516999991</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20241024</TrxnDate>\r\n                <TrxnTime>120516</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>wasiim@imoney.my</PartnerEmail>\r\n                <ProcessID>RH1A1729742716077101</ProcessID>\r\n                <ProcessDate>20241024120516</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>457</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>990101211111</IdNo>\r\n                <CustomerName>Mansor Bin Masdor</CustomerName>\r\n                <DateOfBirth>01/01/1999</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>01</Race>\r\n                <MobilePhoneNoAreaCode>60</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>123456789</MobilePhoneNo>\r\n                <Email>mm@yopmail.com</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>-10000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>FRUVNN9I</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>-120000.0</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.75</ProfitRate>\r\n                <Ney>5.75</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0035</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+                    "options": {
+                      "raw": {
+                        "language": "xml"
+                      }
+                    }
+                  }
+                },
+                "response": [],
+                "event": [
+                  {
+                    "listen": "test",
+                    "script": {
+                      "id": "ac3bf3ba-c78c-4f30-a9cb-853bea13bb77",
+                      "type": "text/javascript",
+                      "packages": {},
+                      "exec": [
+                        "// Convert XML response to JSON",
+                        "var responseJson = xml2Json(pm.response.text());",
+                        "",
+                        "// Validate Status Code",
+                        "pm.test(\"Status code is 200\", function () {",
+                        "    pm.response.to.have.status(200);",
+                        "});",
+                        "",
+                        "// Validate MsgRefNo is Present",
+                        "pm.test(\"MsgRefNo exists\", function () {",
+                        "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.MsgRefNo).to.exist;",
+                        "});",
+                        "",
+                        "// Validate MsgRefNo Starts with 'AP'",
+                        "pm.test(\"MsgRefNo starts with 'AP'\", function () {",
+                        "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.MsgRefNo).to.include(\"AP\");",
+                        "});",
+                        "",
+                        "// Validate ExtTrxnCd is REAIDC10",
+                        "pm.test(\"ExtTrxnCd is REAIDC10\", function () {",
+                        "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.ExtTrxnCd).to.eql(\"REAIDC10\");",
+                        "});",
+                        "",
+                        "// Validate Error Code is 01",
+                        "pm.test(\"Error Code is 01\", function () {",
+                        "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.ErrCode).to.eql(\"01\");",
+                        "});",
+                        "",
+                        "// Validate DestQueueMgr is UMYQMB02",
+                        "pm.test(\"DestQueueMgr is UMYQMB02\", function () {",
+                        "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.DestQueueMgr).to.eql(\"UMYQMB02\");",
+                        "});",
+                        ""
+                      ],
+                      "_lastExecutionId": "0daef39c-5413-4723-866a-fb7b525bfa34"
+                    }
+                  }
+                ]
+              }
+            ],
+            "event": []
+          }
+        ],
+        "event": []
+      },
+      {
+        "id": "f4a5dba7-c804-4738-b108-699673864058",
+        "name": "Credit Card UAT",
+        "item": [
+          {
+            "id": "6b9ca501-0c26-4257-a0b3-dcb690b9446b",
+            "name": "APIM API",
+            "item": [
+              {
+                "id": "6fcb930a-cea7-4e41-9620-15951b42f19a",
+                "name": "CC submission",
+                "request": {
+                  "url": {
+                    "protocol": "https",
+                    "path": [
+                      "ccsubmit",
+                      "ccSubmission",
+                      "aip",
+                      "v1",
+                      "CCApplication",
+                      "submission"
+                    ],
+                    "host": [
+                      "{{base_url}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                  },
+                  "header": [
+                    {
+                      "key": "Ocp-Apim-Subscription-Key",
+                      "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+                    }
+                  ],
+                  "method": "POST",
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"campaign\": \"AA111\",\n    \"preferredBranch\": \"061\",\n    \"customer\": {\n        \"customerName\": \"Nurul\",\n        \"idType\": \"MK\",\n        \"idNo\": \"980910113886\",\n        \"nationality\": \"MY\",\n        \"race\": \"04\",\n        \"gender\": \"F\",\n        \"educationLevel\": \"04\",\n        \"maritalStatus\": \"S\",\n        \"noOfDependents\": \"00\",\n        \"employerName\": \"\",\n        \"occupation\": \"050\",\n        \"employmentType\": \"03\",\n        \"employmentSector\": \"\",\n        \"subEmploymentSector\": \"\",\n        \"dateJoined\": \"2021-12-26\",\n        \"monthlyGrossIncome\": \"15000.00\",\n        \"monthlyNetIncome\": \"100000.00\",\n        \"mobilePhoneNoAreaCode\": \"015\",\n        \"mobilePhoneNo\": \"9876543\",\n        \"email\": \"sandfdfo.erw1112@gmail.com\",\n        \"residenceType\": \"CC0004\",\n        \"employmentStatus\": \"CON\",\n        \"preferredLanguage\": \"02\",\n        \"mailingBillingAddressInd\": \"R\",\n        \"emergencyContactName\": \"Alex\",\n        \"relationshipToContactName\": \"08\",\n        \"relationshipToStaff\": \"42\",\n        \"emerContactTelNo1AreaCode\": \"015\",\n        \"emerContactTelNo1\": \"9123459\",\n        \"consentCrossSelling\": \"Y\",\n        \"consentObtainInfoFromCtos\": \"N\",\n        \"excessLimitConsent\": \"Y\",\n        \"feePayable/Waiver and Product Benefits\": \"Y\",\n        \"disclosureOfInformation\": \"Y\",\n        \"consentForOverseas&CardNotPresentTransaction\": \"N\",\n        \"sourceOfWealth\": \"09\",\n        \"relatedToStaff\": \"N\",\n        \"addressList\": [\n            {\n                \"addressType\": \"P\",\n                \"addressLine1\": \"No24, 2nd Street\",\n                \"addressLine2\": \"1\",\n                \"addressLine3\": \"1\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"01\"\n            },\n            {\n                \"addressType\": \"O\",\n                \"addressLine1\": \"110, New Colony Street\",\n                \"addressLine2\": \"hdf\",\n                \"addressLine3\": \"KL\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"officePhoneNoAreaCode\": \"607\",\n                \"officePhoneNo\": \"9876507\",\n                \"officeExtensionPhoneNo\": \"\",\n                \"durationInCurrentResidenceYr\": \"\",\n                \"durationInCurrentResidenceMth\": \"\"\n            },\n            {\n                \"addressType\": \"R\",\n                \"addressLine1\": \"3/339, HB\",\n                \"addressLine2\": \"Old Street\",\n                \"addressLine3\": \"Near Bus Stop\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"02\"\n            }\n        ],\n        \"salutation\": \"002\",\n        \"cardCollectionBranch\": \"046\",\n        \"statementType\": \"R\",\n        \"nameOnCard\": \"Nurulnabilah\",\n        \"mothersMaidenName\": \"Ahmad Shukri\",\n        \"companyType\": \"003\",\n        \"previousEmployerName\": \"\",\n        \"directorship\": \"N\",\n        \"businessRegistrationNo\": \"20000301ABC\",\n        \"paidUpCapital\": \"100000\",\n        \"shareholdingAmount\": \"\",\n        \"%OfShareholding\": \"80\",\n        \"multinationalCompany\": \"\",\n        \"businessEstDate\": \"2000-03-01\",\n        \"previousOccupation\": \"\",\n        \"previousLengthOfService(Year)\": \"\",\n        \"previousLengthOfService(Month)\": \"11\",\n        \"homePhoneNoAreaCode\": \"\",\n        \"homePhoneNo\": \"\",\n        \"homeExtPhoneNo\": \"\",\n        \"emerContactTelNo1Ext\": \"1234\",\n        \"emerContactTelNo2AreaCode\": \"\",\n        \"emerContactTelNo2\": \"\",\n        \"emerContactTelNo2Ext\": \"1987\",\n        \"shortName\": \"\"\n    },\n    \"cardFacilityList\": [\n        {\n            \"sourceOfFund\": \"01\",\n            \"purposeOfAccountOpening\": \"01\",\n            \"creditShield\": \"Y\",\n            \"memoLine1\": \"\",\n            \"pin\": \"Y\",\n            \"cardProduct\": [\n                {\n                    \"cardType\": \"590\"\n                }\n            ]\n        }\n    ]\n}\n",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "response": [],
+                "event": []
+              },
+              {
+                "id": "a7c8e301-51d4-494c-ae18-57820bb8bb7d",
+                "name": "CC status tracker",
+                "request": {
+                  "url": {
+                    "protocol": "https",
+                    "path": [
+                      "ccstatus",
+                      "ccStatus",
+                      "aip",
+                      "v1",
+                      "CCApplication",
+                      "status"
+                    ],
+                    "host": [
+                      "{{base_url}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                  },
+                  "header": [
+                    {
+                      "key": "Ocp-Apim-Subscription-Key",
+                      "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+                    }
+                  ],
+                  "method": "POST",
+                  "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"primaryID\": \"980910113886\",\n    \"fromDate\": \"2023-10-27\",\n    \"toDate\": \"2023-10-27\",\n    \"externalRefID\": \"CC20231027073558100002\"\n}",
+                    "options": {
+                      "raw": {
+                        "language": "json"
+                      }
+                    }
+                  }
+                },
+                "response": [],
+                "event": []
+              }
+            ],
+            "event": []
+          },
+          {
+            "id": "53a53a92-ff81-41ba-a52b-79c540343ddb",
+            "name": "FLASH API",
+            "item": [],
+            "event": []
+          }
+        ],
+        "event": []
+      }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+      "_postman_id": "07f71f9f-2c5f-4838-9894-72eae802dcf6",
+      "name": "API COE Testing",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "sit-env",
+    "name": "SIT",
+    "values": [
+      {
+        "type": "any",
+        "value": "https://sitgateway.api.rhbgroup.com",
+        "key": "base_url"
+      },
+      {
+        "type": "any",
+        "value": "",
+        "key": "af-api-v"
+      },
+      {
+        "type": "any",
+        "value": "xxxx",
+        "key": "af-key"
+      },
+      {
+        "type": "any",
+        "value": "",
+        "key": "pf-api-v"
+      },
+      {
+        "type": "any",
+        "value": "8b6dd95e3ab84b0c91032ea0d5fa1386",
+        "key": "pf-key"
+      },
+      {
+        "type": "any",
+        "value": "1",
+        "key": "mg-api-v"
+      },
+      {
+        "type": "any",
+        "value": "29bb2a7ac13b4cf7a4182e1fc0959f55",
+        "key": "mg-key"
+      },
+      {
+        "type": "any",
+        "value": "1",
+        "key": "af-psc-v"
+      },
+      {
+        "type": "any",
+        "value": "aaaa2c0e073b4fd1a18195598ceca8cb",
+        "key": "af-psc-key"
+      },
+      {
+        "type": "any",
+        "value": "/afprescreening",
+        "key": "af-psc-suffix"
+      },
+      {
+        "type": "any",
+        "value": "/aipstatus",
+        "key": "af-psc-status-suffix"
+      },
+      {
+        "type": "any",
+        "value": "",
+        "key": "cc-api-v"
+      },
+      {
+        "type": "any",
+        "value": "c723435b93e64d2789b7ed7ccc8e126b",
+        "key": "cc-key"
+      },
+      {
+        "type": "any",
+        "value": "1",
+        "key": "dms-api-v"
+      },
+      {
+        "type": "any",
+        "value": "cfbcfaae0e404624bdb9c46a23ae49e8",
+        "key": "dms-key"
+      },
+      {
+        "type": "any",
+        "value": "/sit/dms/upload",
+        "key": "dms-suffix"
+      },
+      {
+        "type": "any",
+        "value": "adad6de5806648bea5ef37c0b0955351",
+        "key": "spaas-key"
+      },
+      {
+        "type": "any",
+        "value": "/spaas",
+        "key": "spaas-sufix"
+      },
+      {
+        "type": "any",
+        "value": "https://172.30.94.15:8084",
+        "key": "flashURL"
+      },
+      {
+        "type": "any",
+        "value": "1",
+        "key": "rhb-api-version"
+      },
+      {
+        "type": "any",
+        "value": "application/xml",
+        "key": "Content-Type"
+      },
+      {
+        "type": "any",
+        "value": "",
+        "key": "validationError"
+      },
+      {
+        "type": "any",
+        "value": "APO0444",
+        "key": "partnerCode"
+      },
+      {
+        "type": "any",
+        "value": "",
+        "key": "handshakeJwtToken"
+      },
+      {
+        "type": "any",
+        "value": "",
+        "key": "apiToken"
+      }
+    ]
+  },
+  "globals": {
+    "id": "6f805d71-f9a8-4c40-980f-6e64fda3c916",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 3,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 3,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 3,
+        "pending": 0,
+        "failed": 2
+      },
+      "tests": {
+        "total": 3,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 6,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 218,
+      "responseMin": 218,
+      "responseMax": 218,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1740107047823,
+      "completed": 1740107048196
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 3,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "e5601621-f2de-4c9b-a768-612d9b528a62",
+          "httpRequestId": "4aa542f9-5ba4-455a-9e4e-ae4b70629bd0"
+        },
+        "item": {
+          "id": "5c375496-024c-4187-9afd-8a8f81dbf5bd",
+          "name": "REAIDC10-AFPreScreenSubmission demo",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "port": "8084",
+              "path": [
+                "APIFlash"
+              ],
+              "host": [
+                "172",
+                "30",
+                "94",
+                "15"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AP20241024120516999991</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20241024</TrxnDate>\r\n                <TrxnTime>120516</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>wasiim@imoney.my</PartnerEmail>\r\n                <ProcessID>RH1A1729742716077101</ProcessID>\r\n                <ProcessDate>20241024120516</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>457</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>990101211111</IdNo>\r\n                <CustomerName>Mansor Bin Masdor</CustomerName>\r\n                <DateOfBirth>01/01/1999</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>01</Race>\r\n                <MobilePhoneNoAreaCode>60</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>123456789</MobilePhoneNo>\r\n                <Email>mm@yopmail.com</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>-10000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>FRUVNN9I</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>-120000.0</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.75</ProfitRate>\r\n                <Ney>5.75</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0035</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ac3bf3ba-c78c-4f30-a9cb-853bea13bb77",
+                "type": "text/javascript",
+                "packages": {},
+                "exec": [
+                  "// Convert XML response to JSON",
+                  "var responseJson = xml2Json(pm.response.text());",
+                  "",
+                  "// Validate Status Code",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// Validate MsgRefNo is Present",
+                  "pm.test(\"MsgRefNo exists\", function () {",
+                  "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.MsgRefNo).to.exist;",
+                  "});",
+                  "",
+                  "// Validate MsgRefNo Starts with 'AP'",
+                  "pm.test(\"MsgRefNo starts with 'AP'\", function () {",
+                  "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.MsgRefNo).to.include(\"AP\");",
+                  "});",
+                  "",
+                  "// Validate ExtTrxnCd is REAIDC10",
+                  "pm.test(\"ExtTrxnCd is REAIDC10\", function () {",
+                  "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.ExtTrxnCd).to.eql(\"REAIDC10\");",
+                  "});",
+                  "",
+                  "// Validate Error Code is 01",
+                  "pm.test(\"Error Code is 01\", function () {",
+                  "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.ErrCode).to.eql(\"01\");",
+                  "});",
+                  "",
+                  "// Validate DestQueueMgr is UMYQMB02",
+                  "pm.test(\"DestQueueMgr is UMYQMB02\", function () {",
+                  "    pm.expect(responseJson['soapenv:Envelope']['soapenv:Body'].Message.Header.DestQueueMgr).to.eql(\"UMYQMB02\");",
+                  "});",
+                  ""
+                ],
+                "_lastExecutionId": "0daef39c-5413-4723-866a-fb7b525bfa34"
+              }
+            }
+          ]
+        },
+        "request": {
+          "url": {
+            "protocol": "https",
+            "port": "8084",
+            "path": [
+              "APIFlash"
+            ],
+            "host": [
+              "172",
+              "30",
+              "94",
+              "15"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/xml",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.39.1",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "44d2b7d7-fe25-4f1d-808a-41415e0f6323",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "172.30.94.15:8084",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            },
+            {
+              "key": "Content-Length",
+              "value": "5148",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <SOAP-ENV:Header>\r\n        <wsse:Security xmlns:wsse=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n            <wsse:BinarySecurityToken EncodingType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary\" ValueType=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3\">MIIFBzCCA++gAwIBAgITbAAACMzggT8q/afb8wAAAAAIzDANBgkqhkiG9w0BAQsF ADAVMRMwEQYDVQQDEwpSSEJHUk9VUENBMB4XDTIzMDUwMjEzMzgwMloXDTI2MDUw MjEzNDgwMlowgYwxCzAJBgNVBAYTAk1ZMRUwEwYDVQQIEwxLdWFsYSBMdW1wdXIx FTATBgNVBAcTDEt1YWxhIEx1bXB1cjEYMBYGA1UEChMPUkhCIEJhbmsgQmVyaGFk MRkwFwYDVQQLExBHcm91cCBUZWNobm9sb2d5MRowGAYDVQQDExFteXJoYmVhaW1i dWF0WDUwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJRG+9NKojWi YQx8/YXsmT0DPZpain1g0lj2mj5zWpEaSOlT9SKn+c2JYg7x/gbDZ2abfVtJQKE6 WQ8wXsyEs+TeMIa4nTiG0hGrjKC7dGnXxQPYvr8S3NlEeMpqPMjAsaI63qM1yGdY R1MB70mrBP274tvsWGaYXcAlQ3I2zjPLAm/RYnFNOOjJGFxXlpNCsmk46gnT1HKN RE6pRyQXU3wp/eULWVqm53XdZ5kM4cq4yCs0PJeSCFCAGwBqaA4bg2EeyhMoA3Hi /xoSIDl/FxjoGdUATZ7bjNhXMZZYujIqn8wUKOljah1sFMEc5+bPaE/XRchYanSY UFwK/yv/+0ECAwEAAaOCAdYwggHSMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAcBgNVHREEFTATghFt eXJoYmVhaW1idWF0WDUwOTAdBgNVHQ4EFgQUs6xdv2Q814Fw0YMvZUh3eNZWnR4w HwYDVR0jBBgwFoAUrbeOcjfQkFLL/akFTwvAU6rD22QwcwYDVR0fBGwwajBooGag ZIYvaHR0cDovL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBDQS5j cmyGMWZpbGU6Ly8vL01ZUkhCLUNBQVAwMVZQL0NlcnRFbnJvbGwvUkhCR1JPVVBD QS5jcmwwgaoGCCsGAQUFBwEBBIGdMIGaMEoGCCsGAQUFBzAChj5odHRwOi8vTVlS SEItQ0FBUDAxVlAvQ2VydEVucm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENB LmNydDBMBggrBgEFBQcwAoZAZmlsZTovLy8vTVlSSEItQ0FBUDAxVlAvQ2VydEVu cm9sbC9NWVJIQi1DQUFQMDFWUF9SSEJHUk9VUENBLmNydDATBgkrBgEEAYI3FAIE Bh4EAE4AQTANBgkqhkiG9w0BAQsFAAOCAQEAfFEbV+g3H8ZngtwWlJYAcjl4g9mh 7KLXD9eP9zgHaBqCxQL0op5I7TBRqcg9ev7n/vm24NKOadCL9YuRoRdSdCXnHwgf 1JlL1tC7OsPDCCKAM8LPrwfEdQcILg0QA5vAkjfjrHUgWyIawV/JYB/+6rLtezZv QgQlxKCkG1RMRkhXu2lYgIOOTJ4z7w7al6eEcQqT7Sg8HGH568KpAyyAsC4OuxgJ mMlcnCKDskYaZCRKh/74odyKWxRni93h83sHQ8E+mf7X2hbzldNMR1clZmJRRtLQ QIio2XRjbh/L/qG8OIRo95jjVJXzrKiQNBG9oiXtOxh9+OhJ9VfEpmkb2g==\r\n</wsse:BinarySecurityToken>\r\n        </wsse:Security>\r\n    </SOAP-ENV:Header>\r\n    <SOAP-ENV:Body xmlns:wsu=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\r\n        <Message>\r\n            <Header>\r\n                <MsgVerNo>1.0</MsgVerNo>\r\n                <SourceId>API</SourceId>\r\n                <MsgRefNo>AP20241024120516999991</MsgRefNo>\r\n                <LoginId/>\r\n                <Pan/>\r\n                <ExtTrxnCd>REAIDC10</ExtTrxnCd>\r\n                <DplName/>\r\n                <Filler/>\r\n                <Reclen/>\r\n                <NoOfRec/>\r\n                <TrxnDate>20241024</TrxnDate>\r\n                <TrxnTime>120516</TrxnTime>\r\n                <DestQueueMgr/>\r\n                <DestQueue/>\r\n                <ErrCode/>\r\n                <SystemStatus/>\r\n                <ErrMsg/>\r\n                <TerminalId/>\r\n                <RepRefNo/>\r\n                <OvdTellerID/>\r\n            </Header>\r\n            <Body>\r\n                <SourceSystem>04</SourceSystem>\r\n                <PartnerEmail>wasiim@imoney.my</PartnerEmail>\r\n                <ProcessID>RH1A1729742716077101</ProcessID>\r\n                <ProcessDate>20241024120516</ProcessDate>\r\n                <Username/>\r\n                <Password/>\r\n                <FinancingApplicationType>AF</FinancingApplicationType>\r\n                <PreferredBranch>457</PreferredBranch>\r\n                <IdType>MK</IdType>\r\n                <IdNo>990101211111</IdNo>\r\n                <CustomerName>Mansor Bin Masdor</CustomerName>\r\n                <DateOfBirth>01/01/1999</DateOfBirth>\r\n                <Nationality>MY</Nationality>\r\n                <Race>01</Race>\r\n                <MobilePhoneNoAreaCode>60</MobilePhoneNoAreaCode>\r\n                <MobilePhoneNo>123456789</MobilePhoneNo>\r\n                <Email>mm@yopmail.com</Email>\r\n                <ComputationModeCoreInc>00</ComputationModeCoreInc>\r\n                <MonthlyGrossIncome>-10000.0</MonthlyGrossIncome>\r\n                <Entity>I</Entity>\r\n                <FacilityType>HPFAC04</FacilityType>\r\n                <Product>AFI04</Product>\r\n                <FacilityPackage>FRUVNN9I</FacilityPackage>\r\n                <FacilityPurpose>PRI01AF</FacilityPurpose>\r\n                <FinancingAmount>-120000.0</FinancingAmount>\r\n                <FacilityTenureYears>9</FacilityTenureYears>\r\n                <ProfitRate>5.75</ProfitRate>\r\n                <Ney>5.75</Ney>\r\n                <VehicleUsage>P</VehicleUsage>\r\n                <VehicleCondition>U</VehicleCondition>\r\n                <MakeofVehicle>0035</MakeofVehicle>\r\n                <ModelofVehicle>A1705</ModelofVehicle>\r\n                <PurchasePriceOTR>140000.0</PurchasePriceOTR>\r\n            </Body>\r\n        </Message>\r\n    </SOAP-ENV:Body>\r\n</SOAP-ENV:Envelope>",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          }
+        },
+        "response": {
+          "id": "cb05ee80-9704-44f8-bbc0-1d9aa63644da",
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/xml;charset=utf-8"
+            },
+            {
+              "key": "Server",
+              "value": "IBM App Connect Enterprise"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 21 Feb 2025 03:04:08 GMT"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1147"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              60,
+              63,
+              120,
+              109,
+              108,
+              32,
+              118,
+              101,
+              114,
+              115,
+              105,
+              111,
+              110,
+              61,
+              34,
+              49,
+              46,
+              48,
+              34,
+              32,
+              101,
+              110,
+              99,
+              111,
+              100,
+              105,
+              110,
+              103,
+              61,
+              34,
+              117,
+              116,
+              102,
+              45,
+              56,
+              34,
+              63,
+              62,
+              60,
+              115,
+              111,
+              97,
+              112,
+              101,
+              110,
+              118,
+              58,
+              69,
+              110,
+              118,
+              101,
+              108,
+              111,
+              112,
+              101,
+              32,
+              120,
+              109,
+              108,
+              110,
+              115,
+              58,
+              115,
+              111,
+              97,
+              112,
+              101,
+              110,
+              118,
+              61,
+              34,
+              104,
+              116,
+              116,
+              112,
+              58,
+              47,
+              47,
+              115,
+              99,
+              104,
+              101,
+              109,
+              97,
+              115,
+              46,
+              120,
+              109,
+              108,
+              115,
+              111,
+              97,
+              112,
+              46,
+              111,
+              114,
+              103,
+              47,
+              115,
+              111,
+              97,
+              112,
+              47,
+              101,
+              110,
+              118,
+              101,
+              108,
+              111,
+              112,
+              101,
+              47,
+              34,
+              32,
+              120,
+              109,
+              108,
+              110,
+              115,
+              58,
+              101,
+              97,
+              105,
+              61,
+              34,
+              104,
+              116,
+              116,
+              112,
+              58,
+              47,
+              47,
+              119,
+              119,
+              119,
+              46,
+              101,
+              97,
+              105,
+              46,
+              114,
+              104,
+              98,
+              46,
+              99,
+              111,
+              109,
+              34,
+              62,
+              60,
+              115,
+              111,
+              97,
+              112,
+              101,
+              110,
+              118,
+              58,
+              66,
+              111,
+              100,
+              121,
+              62,
+              60,
+              77,
+              101,
+              115,
+              115,
+              97,
+              103,
+              101,
+              62,
+              60,
+              72,
+              101,
+              97,
+              100,
+              101,
+              114,
+              62,
+              60,
+              77,
+              115,
+              103,
+              86,
+              101,
+              114,
+              78,
+              111,
+              62,
+              49,
+              46,
+              48,
+              60,
+              47,
+              77,
+              115,
+              103,
+              86,
+              101,
+              114,
+              78,
+              111,
+              62,
+              60,
+              83,
+              111,
+              117,
+              114,
+              99,
+              101,
+              73,
+              100,
+              62,
+              65,
+              80,
+              73,
+              60,
+              47,
+              83,
+              111,
+              117,
+              114,
+              99,
+              101,
+              73,
+              100,
+              62,
+              60,
+              77,
+              115,
+              103,
+              82,
+              101,
+              102,
+              78,
+              111,
+              62,
+              65,
+              80,
+              50,
+              48,
+              50,
+              52,
+              49,
+              48,
+              50,
+              52,
+              49,
+              50,
+              48,
+              53,
+              49,
+              54,
+              57,
+              57,
+              57,
+              57,
+              57,
+              49,
+              60,
+              47,
+              77,
+              115,
+              103,
+              82,
+              101,
+              102,
+              78,
+              111,
+              62,
+              60,
+              76,
+              111,
+              103,
+              105,
+              110,
+              73,
+              100,
+              62,
+              60,
+              47,
+              76,
+              111,
+              103,
+              105,
+              110,
+              73,
+              100,
+              62,
+              60,
+              80,
+              97,
+              110,
+              62,
+              60,
+              47,
+              80,
+              97,
+              110,
+              62,
+              60,
+              69,
+              120,
+              116,
+              84,
+              114,
+              120,
+              110,
+              67,
+              100,
+              62,
+              82,
+              69,
+              65,
+              73,
+              68,
+              67,
+              49,
+              48,
+              60,
+              47,
+              69,
+              120,
+              116,
+              84,
+              114,
+              120,
+              110,
+              67,
+              100,
+              62,
+              60,
+              68,
+              112,
+              108,
+              78,
+              97,
+              109,
+              101,
+              62,
+              60,
+              47,
+              68,
+              112,
+              108,
+              78,
+              97,
+              109,
+              101,
+              62,
+              60,
+              70,
+              105,
+              108,
+              108,
+              101,
+              114,
+              62,
+              60,
+              47,
+              70,
+              105,
+              108,
+              108,
+              101,
+              114,
+              62,
+              60,
+              82,
+              101,
+              99,
+              108,
+              101,
+              110,
+              62,
+              48,
+              60,
+              47,
+              82,
+              101,
+              99,
+              108,
+              101,
+              110,
+              62,
+              60,
+              78,
+              111,
+              79,
+              102,
+              82,
+              101,
+              99,
+              62,
+              48,
+              60,
+              47,
+              78,
+              111,
+              79,
+              102,
+              82,
+              101,
+              99,
+              62,
+              60,
+              84,
+              114,
+              120,
+              110,
+              68,
+              97,
+              116,
+              101,
+              62,
+              50,
+              48,
+              50,
+              52,
+              49,
+              48,
+              50,
+              52,
+              60,
+              47,
+              84,
+              114,
+              120,
+              110,
+              68,
+              97,
+              116,
+              101,
+              62,
+              60,
+              84,
+              114,
+              120,
+              110,
+              84,
+              105,
+              109,
+              101,
+              62,
+              49,
+              50,
+              48,
+              53,
+              49,
+              54,
+              60,
+              47,
+              84,
+              114,
+              120,
+              110,
+              84,
+              105,
+              109,
+              101,
+              62,
+              60,
+              68,
+              101,
+              115,
+              116,
+              81,
+              117,
+              101,
+              117,
+              101,
+              77,
+              103,
+              114,
+              62,
+              85,
+              77,
+              89,
+              81,
+              77,
+              66,
+              48,
+              50,
+              60,
+              47,
+              68,
+              101,
+              115,
+              116,
+              81,
+              117,
+              101,
+              117,
+              101,
+              77,
+              103,
+              114,
+              62,
+              60,
+              68,
+              101,
+              115,
+              116,
+              81,
+              117,
+              101,
+              117,
+              101,
+              62,
+              60,
+              47,
+              68,
+              101,
+              115,
+              116,
+              81,
+              117,
+              101,
+              117,
+              101,
+              62,
+              60,
+              69,
+              114,
+              114,
+              67,
+              111,
+              100,
+              101,
+              62,
+              48,
+              49,
+              60,
+              47,
+              69,
+              114,
+              114,
+              67,
+              111,
+              100,
+              101,
+              62,
+              60,
+              83,
+              121,
+              115,
+              116,
+              101,
+              109,
+              83,
+              116,
+              97,
+              116,
+              117,
+              115,
+              62,
+              60,
+              47,
+              83,
+              121,
+              115,
+              116,
+              101,
+              109,
+              83,
+              116,
+              97,
+              116,
+              117,
+              115,
+              62,
+              60,
+              69,
+              114,
+              114,
+              77,
+              115,
+              103,
+              62,
+              60,
+              47,
+              69,
+              114,
+              114,
+              77,
+              115,
+              103,
+              62,
+              60,
+              84,
+              101,
+              114,
+              109,
+              105,
+              110,
+              97,
+              108,
+              73,
+              100,
+              62,
+              60,
+              47,
+              84,
+              101,
+              114,
+              109,
+              105,
+              110,
+              97,
+              108,
+              73,
+              100,
+              62,
+              60,
+              82,
+              101,
+              112,
+              82,
+              101,
+              102,
+              78,
+              111,
+              62,
+              60,
+              47,
+              82,
+              101,
+              112,
+              82,
+              101,
+              102,
+              78,
+              111,
+              62,
+              60,
+              79,
+              118,
+              100,
+              84,
+              101,
+              108,
+              108,
+              101,
+              114,
+              73,
+              100,
+              62,
+              60,
+              47,
+              79,
+              118,
+              100,
+              84,
+              101,
+              108,
+              108,
+              101,
+              114,
+              73,
+              100,
+              62,
+              60,
+              80,
+              114,
+              105,
+              65,
+              99,
+              99,
+              116,
+              67,
+              117,
+              114,
+              114,
+              78,
+              111,
+              62,
+              60,
+              47,
+              80,
+              114,
+              105,
+              65,
+              99,
+              99,
+              116,
+              67,
+              117,
+              114,
+              114,
+              78,
+              111,
+              62,
+              60,
+              82,
+              101,
+              112,
+              108,
+              105,
+              101,
+              100,
+              77,
+              115,
+              103,
+              62,
+              60,
+              77,
+              115,
+              103,
+              76,
+              105,
+              115,
+              116,
+              62,
+              60,
+              77,
+              115,
+              103,
+              62,
+              60,
+              80,
+              114,
+              111,
+              103,
+              73,
+              100,
+              62,
+              77,
+              66,
+              60,
+              47,
+              80,
+              114,
+              111,
+              103,
+              73,
+              100,
+              62,
+              60,
+              77,
+              115,
+              103,
+              67,
+              100,
+              62,
+              48,
+              49,
+              52,
+              48,
+              60,
+              47,
+              77,
+              115,
+              103,
+              67,
+              100,
+              62,
+              60,
+              77,
+              115,
+              103,
+              83,
+              101,
+              118,
+              62,
+              70,
+              60,
+              47,
+              77,
+              115,
+              103,
+              83,
+              101,
+              118,
+              62,
+              60,
+              77,
+              115,
+              103,
+              68,
+              115,
+              99,
+              112,
+              62,
+              68,
+              117,
+              112,
+              108,
+              105,
+              99,
+              97,
+              116,
+              101,
+              100,
+              32,
+              112,
+              114,
+              111,
+              99,
+              101,
+              115,
+              115,
+              32,
+              73,
+              68,
+              32,
+              82,
+              72,
+              49,
+              65,
+              49,
+              55,
+              50,
+              57,
+              55,
+              52,
+              50,
+              55,
+              49,
+              54,
+              48,
+              55,
+              55,
+              49,
+              48,
+              49,
+              60,
+              47,
+              77,
+              115,
+              103,
+              68,
+              115,
+              99,
+              112,
+              62,
+              60,
+              47,
+              77,
+              115,
+              103,
+              62,
+              60,
+              47,
+              77,
+              115,
+              103,
+              76,
+              105,
+              115,
+              116,
+              62,
+              60,
+              47,
+              82,
+              101,
+              112,
+              108,
+              105,
+              101,
+              100,
+              77,
+              115,
+              103,
+              62,
+              60,
+              47,
+              72,
+              101,
+              97,
+              100,
+              101,
+              114,
+              62,
+              60,
+              66,
+              111,
+              100,
+              121,
+              62,
+              60,
+              80,
+              114,
+              111,
+              99,
+              101,
+              115,
+              115,
+              73,
+              68,
+              62,
+              82,
+              72,
+              49,
+              65,
+              49,
+              55,
+              50,
+              57,
+              55,
+              52,
+              50,
+              55,
+              49,
+              54,
+              48,
+              55,
+              55,
+              49,
+              48,
+              49,
+              60,
+              47,
+              80,
+              114,
+              111,
+              99,
+              101,
+              115,
+              115,
+              73,
+              68,
+              62,
+              60,
+              80,
+              114,
+              111,
+              99,
+              101,
+              115,
+              115,
+              68,
+              97,
+              116,
+              101,
+              62,
+              50,
+              48,
+              50,
+              52,
+              49,
+              48,
+              50,
+              52,
+              49,
+              50,
+              48,
+              53,
+              49,
+              54,
+              60,
+              47,
+              80,
+              114,
+              111,
+              99,
+              101,
+              115,
+              115,
+              68,
+              97,
+              116,
+              101,
+              62,
+              60,
+              67,
+              117,
+              115,
+              116,
+              111,
+              109,
+              101,
+              114,
+              73,
+              68,
+              78,
+              111,
+              62,
+              57,
+              57,
+              48,
+              49,
+              48,
+              49,
+              50,
+              49,
+              49,
+              49,
+              49,
+              49,
+              60,
+              47,
+              67,
+              117,
+              115,
+              116,
+              111,
+              109,
+              101,
+              114,
+              73,
+              68,
+              78,
+              111,
+              62,
+              60,
+              67,
+              117,
+              115,
+              116,
+              111,
+              109,
+              101,
+              114,
+              78,
+              97,
+              109,
+              101,
+              62,
+              77,
+              97,
+              110,
+              115,
+              111,
+              114,
+              32,
+              66,
+              105,
+              110,
+              32,
+              77,
+              97,
+              115,
+              100,
+              111,
+              114,
+              60,
+              47,
+              67,
+              117,
+              115,
+              116,
+              111,
+              109,
+              101,
+              114,
+              78,
+              97,
+              109,
+              101,
+              62,
+              60,
+              80,
+              97,
+              114,
+              116,
+              110,
+              101,
+              114,
+              69,
+              109,
+              97,
+              105,
+              108,
+              62,
+              119,
+              97,
+              115,
+              105,
+              105,
+              109,
+              64,
+              105,
+              109,
+              111,
+              110,
+              101,
+              121,
+              46,
+              109,
+              121,
+              60,
+              47,
+              80,
+              97,
+              114,
+              116,
+              110,
+              101,
+              114,
+              69,
+              109,
+              97,
+              105,
+              108,
+              62,
+              60,
+              47,
+              66,
+              111,
+              100,
+              121,
+              62,
+              60,
+              47,
+              77,
+              101,
+              115,
+              115,
+              97,
+              103,
+              101,
+              62,
+              60,
+              47,
+              115,
+              111,
+              97,
+              112,
+              101,
+              110,
+              118,
+              58,
+              66,
+              111,
+              100,
+              121,
+              62,
+              60,
+              47,
+              115,
+              111,
+              97,
+              112,
+              101,
+              110,
+              118,
+              58,
+              69,
+              110,
+              118,
+              101,
+              108,
+              111,
+              112,
+              101,
+              62
+            ]
+          },
+          "cookie": [],
+          "responseTime": 218,
+          "responseSize": 1147
+        },
+        "id": "5c375496-024c-4187-9afd-8a8f81dbf5bd",
+        "assertions": [
+          {
+            "assertion": "Status code is 200",
+            "skipped": false
+          },
+          {
+            "assertion": "MsgRefNo exists",
+            "skipped": false
+          },
+          {
+            "assertion": "MsgRefNo starts with 'AP'",
+            "skipped": false
+          },
+          {
+            "assertion": "ExtTrxnCd is REAIDC10",
+            "skipped": false
+          },
+          {
+            "assertion": "Error Code is 01",
+            "skipped": false
+          },
+          {
+            "assertion": "DestQueueMgr is UMYQMB02",
+            "skipped": false
+          }
+        ]
+      },
+      {
+        "cursor": {
+          "ref": "ce2bbad6-6878-42ca-ac76-4244eca5e047",
+          "length": 3,
+          "cycles": 1,
+          "position": 1,
+          "iteration": 0,
+          "httpRequestId": "da777dcd-e955-42fa-8f33-8483f86dc22f"
+        },
+        "item": {
+          "id": "6fcb930a-cea7-4e41-9620-15951b42f19a",
+          "name": "CC submission",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "ccsubmit",
+                "ccSubmission",
+                "aip",
+                "v1",
+                "CCApplication",
+                "submission"
+              ],
+              "host": [
+                "{{base_url}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Ocp-Apim-Subscription-Key",
+                "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"campaign\": \"AA111\",\n    \"preferredBranch\": \"061\",\n    \"customer\": {\n        \"customerName\": \"Nurul\",\n        \"idType\": \"MK\",\n        \"idNo\": \"980910113886\",\n        \"nationality\": \"MY\",\n        \"race\": \"04\",\n        \"gender\": \"F\",\n        \"educationLevel\": \"04\",\n        \"maritalStatus\": \"S\",\n        \"noOfDependents\": \"00\",\n        \"employerName\": \"\",\n        \"occupation\": \"050\",\n        \"employmentType\": \"03\",\n        \"employmentSector\": \"\",\n        \"subEmploymentSector\": \"\",\n        \"dateJoined\": \"2021-12-26\",\n        \"monthlyGrossIncome\": \"15000.00\",\n        \"monthlyNetIncome\": \"100000.00\",\n        \"mobilePhoneNoAreaCode\": \"015\",\n        \"mobilePhoneNo\": \"9876543\",\n        \"email\": \"sandfdfo.erw1112@gmail.com\",\n        \"residenceType\": \"CC0004\",\n        \"employmentStatus\": \"CON\",\n        \"preferredLanguage\": \"02\",\n        \"mailingBillingAddressInd\": \"R\",\n        \"emergencyContactName\": \"Alex\",\n        \"relationshipToContactName\": \"08\",\n        \"relationshipToStaff\": \"42\",\n        \"emerContactTelNo1AreaCode\": \"015\",\n        \"emerContactTelNo1\": \"9123459\",\n        \"consentCrossSelling\": \"Y\",\n        \"consentObtainInfoFromCtos\": \"N\",\n        \"excessLimitConsent\": \"Y\",\n        \"feePayable/Waiver and Product Benefits\": \"Y\",\n        \"disclosureOfInformation\": \"Y\",\n        \"consentForOverseas&CardNotPresentTransaction\": \"N\",\n        \"sourceOfWealth\": \"09\",\n        \"relatedToStaff\": \"N\",\n        \"addressList\": [\n            {\n                \"addressType\": \"P\",\n                \"addressLine1\": \"No24, 2nd Street\",\n                \"addressLine2\": \"1\",\n                \"addressLine3\": \"1\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"01\"\n            },\n            {\n                \"addressType\": \"O\",\n                \"addressLine1\": \"110, New Colony Street\",\n                \"addressLine2\": \"hdf\",\n                \"addressLine3\": \"KL\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"officePhoneNoAreaCode\": \"607\",\n                \"officePhoneNo\": \"9876507\",\n                \"officeExtensionPhoneNo\": \"\",\n                \"durationInCurrentResidenceYr\": \"\",\n                \"durationInCurrentResidenceMth\": \"\"\n            },\n            {\n                \"addressType\": \"R\",\n                \"addressLine1\": \"3/339, HB\",\n                \"addressLine2\": \"Old Street\",\n                \"addressLine3\": \"Near Bus Stop\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"02\"\n            }\n        ],\n        \"salutation\": \"002\",\n        \"cardCollectionBranch\": \"046\",\n        \"statementType\": \"R\",\n        \"nameOnCard\": \"Nurulnabilah\",\n        \"mothersMaidenName\": \"Ahmad Shukri\",\n        \"companyType\": \"003\",\n        \"previousEmployerName\": \"\",\n        \"directorship\": \"N\",\n        \"businessRegistrationNo\": \"20000301ABC\",\n        \"paidUpCapital\": \"100000\",\n        \"shareholdingAmount\": \"\",\n        \"%OfShareholding\": \"80\",\n        \"multinationalCompany\": \"\",\n        \"businessEstDate\": \"2000-03-01\",\n        \"previousOccupation\": \"\",\n        \"previousLengthOfService(Year)\": \"\",\n        \"previousLengthOfService(Month)\": \"11\",\n        \"homePhoneNoAreaCode\": \"\",\n        \"homePhoneNo\": \"\",\n        \"homeExtPhoneNo\": \"\",\n        \"emerContactTelNo1Ext\": \"1234\",\n        \"emerContactTelNo2AreaCode\": \"\",\n        \"emerContactTelNo2\": \"\",\n        \"emerContactTelNo2Ext\": \"1987\",\n        \"shortName\": \"\"\n    },\n    \"cardFacilityList\": [\n        {\n            \"sourceOfFund\": \"01\",\n            \"purposeOfAccountOpening\": \"01\",\n            \"creditShield\": \"Y\",\n            \"memoLine1\": \"\",\n            \"pin\": \"Y\",\n            \"cardProduct\": [\n                {\n                    \"cardType\": \"590\"\n                }\n            ]\n        }\n    ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        "request": {
+          "url": {
+            "protocol": "https",
+            "port": "",
+            "path": [
+              "",
+              "sitgateway.api.rhbgroup.com",
+              "ccsubmit",
+              "ccSubmission",
+              "aip",
+              "v1",
+              "CCApplication",
+              "submission"
+            ],
+            "host": [
+              "https"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Ocp-Apim-Subscription-Key",
+              "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.39.1",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "26dfa39f-91f7-43d3-9685-ccafe64eba1c",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "https:",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"campaign\": \"AA111\",\n    \"preferredBranch\": \"061\",\n    \"customer\": {\n        \"customerName\": \"Nurul\",\n        \"idType\": \"MK\",\n        \"idNo\": \"980910113886\",\n        \"nationality\": \"MY\",\n        \"race\": \"04\",\n        \"gender\": \"F\",\n        \"educationLevel\": \"04\",\n        \"maritalStatus\": \"S\",\n        \"noOfDependents\": \"00\",\n        \"employerName\": \"\",\n        \"occupation\": \"050\",\n        \"employmentType\": \"03\",\n        \"employmentSector\": \"\",\n        \"subEmploymentSector\": \"\",\n        \"dateJoined\": \"2021-12-26\",\n        \"monthlyGrossIncome\": \"15000.00\",\n        \"monthlyNetIncome\": \"100000.00\",\n        \"mobilePhoneNoAreaCode\": \"015\",\n        \"mobilePhoneNo\": \"9876543\",\n        \"email\": \"sandfdfo.erw1112@gmail.com\",\n        \"residenceType\": \"CC0004\",\n        \"employmentStatus\": \"CON\",\n        \"preferredLanguage\": \"02\",\n        \"mailingBillingAddressInd\": \"R\",\n        \"emergencyContactName\": \"Alex\",\n        \"relationshipToContactName\": \"08\",\n        \"relationshipToStaff\": \"42\",\n        \"emerContactTelNo1AreaCode\": \"015\",\n        \"emerContactTelNo1\": \"9123459\",\n        \"consentCrossSelling\": \"Y\",\n        \"consentObtainInfoFromCtos\": \"N\",\n        \"excessLimitConsent\": \"Y\",\n        \"feePayable/Waiver and Product Benefits\": \"Y\",\n        \"disclosureOfInformation\": \"Y\",\n        \"consentForOverseas&CardNotPresentTransaction\": \"N\",\n        \"sourceOfWealth\": \"09\",\n        \"relatedToStaff\": \"N\",\n        \"addressList\": [\n            {\n                \"addressType\": \"P\",\n                \"addressLine1\": \"No24, 2nd Street\",\n                \"addressLine2\": \"1\",\n                \"addressLine3\": \"1\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"01\"\n            },\n            {\n                \"addressType\": \"O\",\n                \"addressLine1\": \"110, New Colony Street\",\n                \"addressLine2\": \"hdf\",\n                \"addressLine3\": \"KL\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"officePhoneNoAreaCode\": \"607\",\n                \"officePhoneNo\": \"9876507\",\n                \"officeExtensionPhoneNo\": \"\",\n                \"durationInCurrentResidenceYr\": \"\",\n                \"durationInCurrentResidenceMth\": \"\"\n            },\n            {\n                \"addressType\": \"R\",\n                \"addressLine1\": \"3/339, HB\",\n                \"addressLine2\": \"Old Street\",\n                \"addressLine3\": \"Near Bus Stop\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"02\"\n            }\n        ],\n        \"salutation\": \"002\",\n        \"cardCollectionBranch\": \"046\",\n        \"statementType\": \"R\",\n        \"nameOnCard\": \"Nurulnabilah\",\n        \"mothersMaidenName\": \"Ahmad Shukri\",\n        \"companyType\": \"003\",\n        \"previousEmployerName\": \"\",\n        \"directorship\": \"N\",\n        \"businessRegistrationNo\": \"20000301ABC\",\n        \"paidUpCapital\": \"100000\",\n        \"shareholdingAmount\": \"\",\n        \"%OfShareholding\": \"80\",\n        \"multinationalCompany\": \"\",\n        \"businessEstDate\": \"2000-03-01\",\n        \"previousOccupation\": \"\",\n        \"previousLengthOfService(Year)\": \"\",\n        \"previousLengthOfService(Month)\": \"11\",\n        \"homePhoneNoAreaCode\": \"\",\n        \"homePhoneNo\": \"\",\n        \"homeExtPhoneNo\": \"\",\n        \"emerContactTelNo1Ext\": \"1234\",\n        \"emerContactTelNo2AreaCode\": \"\",\n        \"emerContactTelNo2\": \"\",\n        \"emerContactTelNo2Ext\": \"1987\",\n        \"shortName\": \"\"\n    },\n    \"cardFacilityList\": [\n        {\n            \"sourceOfFund\": \"01\",\n            \"purposeOfAccountOpening\": \"01\",\n            \"creditShield\": \"Y\",\n            \"memoLine1\": \"\",\n            \"pin\": \"Y\",\n            \"cardProduct\": [\n                {\n                    \"cardType\": \"590\"\n                }\n            ]\n        }\n    ]\n}\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          }
+        },
+        "id": "6fcb930a-cea7-4e41-9620-15951b42f19a",
+        "requestError": {
+          "errno": -54,
+          "code": "ECONNRESET",
+          "syscall": "read"
+        }
+      },
+      {
+        "cursor": {
+          "ref": "683c82f6-de6d-441b-b3f7-0838062acdc6",
+          "length": 3,
+          "cycles": 1,
+          "position": 2,
+          "iteration": 0,
+          "httpRequestId": "433e8c2d-5940-4556-bee3-eae45b534be8"
+        },
+        "item": {
+          "id": "a7c8e301-51d4-494c-ae18-57820bb8bb7d",
+          "name": "CC status tracker",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "ccstatus",
+                "ccStatus",
+                "aip",
+                "v1",
+                "CCApplication",
+                "status"
+              ],
+              "host": [
+                "{{base_url}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Ocp-Apim-Subscription-Key",
+                "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"primaryID\": \"980910113886\",\n    \"fromDate\": \"2023-10-27\",\n    \"toDate\": \"2023-10-27\",\n    \"externalRefID\": \"CC20231027073558100002\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        "request": {
+          "url": {
+            "protocol": "https",
+            "port": "",
+            "path": [
+              "",
+              "sitgateway.api.rhbgroup.com",
+              "ccstatus",
+              "ccStatus",
+              "aip",
+              "v1",
+              "CCApplication",
+              "status"
+            ],
+            "host": [
+              "https"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "key": "Ocp-Apim-Subscription-Key",
+              "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "system": true
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.39.1",
+              "system": true
+            },
+            {
+              "key": "Accept",
+              "value": "*/*",
+              "system": true
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache",
+              "system": true
+            },
+            {
+              "key": "Postman-Token",
+              "value": "5d52546b-d755-443f-93ca-f33ea0a37ffb",
+              "system": true
+            },
+            {
+              "key": "Host",
+              "value": "https:",
+              "system": true
+            },
+            {
+              "key": "Accept-Encoding",
+              "value": "gzip, deflate, br",
+              "system": true
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive",
+              "system": true
+            }
+          ],
+          "method": "POST",
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"primaryID\": \"980910113886\",\n    \"fromDate\": \"2023-10-27\",\n    \"toDate\": \"2023-10-27\",\n    \"externalRefID\": \"CC20231027073558100002\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          }
+        },
+        "id": "a7c8e301-51d4-494c-ae18-57820bb8bb7d",
+        "requestError": {
+          "errno": -54,
+          "code": "ECONNRESET",
+          "syscall": "read"
+        }
+      }
+    ],
+    "transfers": {
+      "responseTotal": 1147
+    },
+    "failures": [
+      {
+        "error": {
+          "errno": -54,
+          "code": "ECONNRESET",
+          "syscall": "read",
+          "name": "Error",
+          "message": "read ECONNRESET",
+          "stack": "Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)",
+          "checksum": "f6b9b3c6e88640c0c53a5393ed4d22af",
+          "id": "c71da675-58dd-4f55-b910-382a26f1db22",
+          "timestamp": 1740107048156,
+          "stacktrace": [
+            {
+              "fileName": "node:internal/stream_base_commons",
+              "lineNumber": 216,
+              "functionName": "TLSWrap.onStreamRead",
+              "typeName": "TLSWrap",
+              "methodName": "onStreamRead",
+              "columnNumber": 20,
+              "native": false
+            }
+          ]
+        },
+        "at": "request",
+        "source": {
+          "id": "6fcb930a-cea7-4e41-9620-15951b42f19a",
+          "name": "CC submission",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "port": "",
+              "path": [
+                "",
+                "sitgateway.api.rhbgroup.com",
+                "ccsubmit",
+                "ccSubmission",
+                "aip",
+                "v1",
+                "CCApplication",
+                "submission"
+              ],
+              "host": [
+                "https"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Ocp-Apim-Subscription-Key",
+                "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "system": true
+              },
+              {
+                "key": "User-Agent",
+                "value": "PostmanRuntime/7.39.1",
+                "system": true
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "system": true
+              },
+              {
+                "key": "Cache-Control",
+                "value": "no-cache",
+                "system": true
+              },
+              {
+                "key": "Postman-Token",
+                "value": "26dfa39f-91f7-43d3-9685-ccafe64eba1c",
+                "system": true
+              },
+              {
+                "key": "Host",
+                "value": "https:",
+                "system": true
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br",
+                "system": true
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive",
+                "system": true
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"campaign\": \"AA111\",\n    \"preferredBranch\": \"061\",\n    \"customer\": {\n        \"customerName\": \"Nurul\",\n        \"idType\": \"MK\",\n        \"idNo\": \"980910113886\",\n        \"nationality\": \"MY\",\n        \"race\": \"04\",\n        \"gender\": \"F\",\n        \"educationLevel\": \"04\",\n        \"maritalStatus\": \"S\",\n        \"noOfDependents\": \"00\",\n        \"employerName\": \"\",\n        \"occupation\": \"050\",\n        \"employmentType\": \"03\",\n        \"employmentSector\": \"\",\n        \"subEmploymentSector\": \"\",\n        \"dateJoined\": \"2021-12-26\",\n        \"monthlyGrossIncome\": \"15000.00\",\n        \"monthlyNetIncome\": \"100000.00\",\n        \"mobilePhoneNoAreaCode\": \"015\",\n        \"mobilePhoneNo\": \"9876543\",\n        \"email\": \"sandfdfo.erw1112@gmail.com\",\n        \"residenceType\": \"CC0004\",\n        \"employmentStatus\": \"CON\",\n        \"preferredLanguage\": \"02\",\n        \"mailingBillingAddressInd\": \"R\",\n        \"emergencyContactName\": \"Alex\",\n        \"relationshipToContactName\": \"08\",\n        \"relationshipToStaff\": \"42\",\n        \"emerContactTelNo1AreaCode\": \"015\",\n        \"emerContactTelNo1\": \"9123459\",\n        \"consentCrossSelling\": \"Y\",\n        \"consentObtainInfoFromCtos\": \"N\",\n        \"excessLimitConsent\": \"Y\",\n        \"feePayable/Waiver and Product Benefits\": \"Y\",\n        \"disclosureOfInformation\": \"Y\",\n        \"consentForOverseas&CardNotPresentTransaction\": \"N\",\n        \"sourceOfWealth\": \"09\",\n        \"relatedToStaff\": \"N\",\n        \"addressList\": [\n            {\n                \"addressType\": \"P\",\n                \"addressLine1\": \"No24, 2nd Street\",\n                \"addressLine2\": \"1\",\n                \"addressLine3\": \"1\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"01\"\n            },\n            {\n                \"addressType\": \"O\",\n                \"addressLine1\": \"110, New Colony Street\",\n                \"addressLine2\": \"hdf\",\n                \"addressLine3\": \"KL\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"officePhoneNoAreaCode\": \"607\",\n                \"officePhoneNo\": \"9876507\",\n                \"officeExtensionPhoneNo\": \"\",\n                \"durationInCurrentResidenceYr\": \"\",\n                \"durationInCurrentResidenceMth\": \"\"\n            },\n            {\n                \"addressType\": \"R\",\n                \"addressLine1\": \"3/339, HB\",\n                \"addressLine2\": \"Old Street\",\n                \"addressLine3\": \"Near Bus Stop\",\n                \"postcode\": \"80050\",\n                \"city\": \"Puchong\",\n                \"state\": \"J\",\n                \"country\": \"MY\",\n                \"durationInCurrentResidenceYr\": \"03\",\n                \"durationInCurrentResidenceMth\": \"02\"\n            }\n        ],\n        \"salutation\": \"002\",\n        \"cardCollectionBranch\": \"046\",\n        \"statementType\": \"R\",\n        \"nameOnCard\": \"Nurulnabilah\",\n        \"mothersMaidenName\": \"Ahmad Shukri\",\n        \"companyType\": \"003\",\n        \"previousEmployerName\": \"\",\n        \"directorship\": \"N\",\n        \"businessRegistrationNo\": \"20000301ABC\",\n        \"paidUpCapital\": \"100000\",\n        \"shareholdingAmount\": \"\",\n        \"%OfShareholding\": \"80\",\n        \"multinationalCompany\": \"\",\n        \"businessEstDate\": \"2000-03-01\",\n        \"previousOccupation\": \"\",\n        \"previousLengthOfService(Year)\": \"\",\n        \"previousLengthOfService(Month)\": \"11\",\n        \"homePhoneNoAreaCode\": \"\",\n        \"homePhoneNo\": \"\",\n        \"homeExtPhoneNo\": \"\",\n        \"emerContactTelNo1Ext\": \"1234\",\n        \"emerContactTelNo2AreaCode\": \"\",\n        \"emerContactTelNo2\": \"\",\n        \"emerContactTelNo2Ext\": \"1987\",\n        \"shortName\": \"\"\n    },\n    \"cardFacilityList\": [\n        {\n            \"sourceOfFund\": \"01\",\n            \"purposeOfAccountOpening\": \"01\",\n            \"creditShield\": \"Y\",\n            \"memoLine1\": \"\",\n            \"pin\": \"Y\",\n            \"cardProduct\": [\n                {\n                    \"cardType\": \"590\"\n                }\n            ]\n        }\n    ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        "cursor": {
+          "ref": "ce2bbad6-6878-42ca-ac76-4244eca5e047",
+          "length": 3,
+          "cycles": 1,
+          "position": 1,
+          "iteration": 0,
+          "httpRequestId": "da777dcd-e955-42fa-8f33-8483f86dc22f"
+        }
+      },
+      {
+        "error": {
+          "errno": -54,
+          "code": "ECONNRESET",
+          "syscall": "read",
+          "name": "Error",
+          "message": "read ECONNRESET",
+          "stack": "Error: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)",
+          "checksum": "f6b9b3c6e88640c0c53a5393ed4d22af",
+          "id": "cdcf5252-211b-4370-a3fd-1e95ea2cb407",
+          "timestamp": 1740107048190,
+          "stacktrace": [
+            {
+              "fileName": "node:internal/stream_base_commons",
+              "lineNumber": 216,
+              "functionName": "TLSWrap.onStreamRead",
+              "typeName": "TLSWrap",
+              "methodName": "onStreamRead",
+              "columnNumber": 20,
+              "native": false
+            }
+          ]
+        },
+        "at": "request",
+        "source": {
+          "id": "a7c8e301-51d4-494c-ae18-57820bb8bb7d",
+          "name": "CC status tracker",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "port": "",
+              "path": [
+                "",
+                "sitgateway.api.rhbgroup.com",
+                "ccstatus",
+                "ccStatus",
+                "aip",
+                "v1",
+                "CCApplication",
+                "status"
+              ],
+              "host": [
+                "https"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Ocp-Apim-Subscription-Key",
+                "value": "dccffd452e9a4e8aa78bceac1c09d1e8"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "system": true
+              },
+              {
+                "key": "User-Agent",
+                "value": "PostmanRuntime/7.39.1",
+                "system": true
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "system": true
+              },
+              {
+                "key": "Cache-Control",
+                "value": "no-cache",
+                "system": true
+              },
+              {
+                "key": "Postman-Token",
+                "value": "5d52546b-d755-443f-93ca-f33ea0a37ffb",
+                "system": true
+              },
+              {
+                "key": "Host",
+                "value": "https:",
+                "system": true
+              },
+              {
+                "key": "Accept-Encoding",
+                "value": "gzip, deflate, br",
+                "system": true
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive",
+                "system": true
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"primaryID\": \"980910113886\",\n    \"fromDate\": \"2023-10-27\",\n    \"toDate\": \"2023-10-27\",\n    \"externalRefID\": \"CC20231027073558100002\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        "cursor": {
+          "ref": "683c82f6-de6d-441b-b3f7-0838062acdc6",
+          "length": 3,
+          "cycles": 1,
+          "position": 2,
+          "iteration": 0,
+          "httpRequestId": "433e8c2d-5940-4556-bee3-eae45b534be8"
+        }
+      }
+    ],
+    "error": null
+  }
+}

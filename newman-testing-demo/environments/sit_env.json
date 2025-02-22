@@ -1,0 +1,156 @@
+{
+    "id": "sit-env",
+    "name": "SIT",
+    "values": [
+      {
+        "key": "base_url",
+        "value": "https://sitgateway.api.rhbgroup.com",
+        "enabled": true
+      },
+      {
+        "key": "af-api-v",
+        "value": "",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "af-key",
+        "value": "xxxx",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "pf-api-v",
+        "value": "",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "pf-key",
+        "value": "8b6dd95e3ab84b0c91032ea0d5fa1386",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "mg-api-v",
+        "value": "1",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "mg-key",
+        "value": "29bb2a7ac13b4cf7a4182e1fc0959f55",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "af-psc-v",
+        "value": "1",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "af-psc-key",
+        "value": "aaaa2c0e073b4fd1a18195598ceca8cb",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "af-psc-suffix",
+        "value": "/afprescreening",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "af-psc-status-suffix",
+        "value": "/aipstatus",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "cc-api-v",
+        "value": "",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "cc-key",
+        "value": "c723435b93e64d2789b7ed7ccc8e126b",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "dms-api-v",
+        "value": "1",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "dms-key",
+        "value": "cfbcfaae0e404624bdb9c46a23ae49e8",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "dms-suffix",
+        "value": "/sit/dms/upload",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "spaas-key",
+        "value": "adad6de5806648bea5ef37c0b0955351",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "spaas-sufix",
+        "value": "/spaas",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "flashURL",
+        "value": "https://172.30.94.15:8084",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "rhb-api-version",
+        "value": "1",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/xml",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "validationError",
+        "value": "",
+        "type": "any",
+        "enabled": true
+      },
+      {
+        "key": "partnerCode",
+        "value": "APO0444",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "handshakeJwtToken",
+        "value": "",
+        "type": "any",
+        "enabled": true
+      },
+      {
+        "key": "apiToken",
+        "value": "",
+        "type": "any",
+        "enabled": true
+      }
+    ]
+  }
+  
